@@ -12,7 +12,7 @@ export default function Layout({ children }) {
     <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none font-circular`}>
       <div className='lg:hidden'>
         <div className=' bg-DeepNightBlack text-LightGray w-full h-10 flex items-center justify-between px-2 lg:hidden relative'>
-          <div className='icon flex items-center gap-x-2' onClick={(e) => setIntro(!intro)}>
+          <div className='icon flex items-center gap-x-2 cursor-pointer' onClick={(e) => setIntro(!intro)}>
             <span className='icon border-2 text-Green border-Green p-1 text-sm rounded-lg'>
               <SlOptionsVertical />
             </span>
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
               <FaMousePointer />
             </div>
           </div>
-          <div className='icon flex items-center gap-x-2' onClick={(e) => setIsOpen(!isOpen)}>
+          <div className='icon flex items-center gap-x-2 cursor-pointer' onClick={(e) => setIsOpen(!isOpen)}>
             <span className='icon border-2 text-Green border-Green p-1 text-sm rounded-lg'>
               {' '}
               <FaBars />
@@ -31,9 +31,8 @@ export default function Layout({ children }) {
       <div className='flex relative h-full justify-between gap-x-3'>
         {/* left most side */}
         <div
-          className={`w-64 h-screen left-0 lg:rounded-xl -top-10 lg:top-0 lg:left-0 lg:h-full overflow-hidden bg-DeepNightBlack shadow-2xl z-50 lg:flex flex-col  lg:relative ${
-            intro ? 'flex absolute' : 'hidden'
-          }`}>
+          className={`w-64 h-screen left-0 lg:rounded-xl -top-10 lg:top-0 lg:left-0 lg:h-full overflow-hidden bg-DeepNightBlack shadow-2xl z-50 lg:flex flex-col  lg:relative ${intro ? 'flex absolute' : 'hidden'
+            }`}>
           <Intro isOpen={intro} setIsOpen={setIntro} />
         </div>
         {/* overlay */}
@@ -45,7 +44,7 @@ export default function Layout({ children }) {
         {/* right side */}
         {/* right side */}
         <div className={`hidden lg:block absolute lg:w-20 lg:relative bg-DeepNightBlack shadow-2xl rounded-xl overflow-hidden`}>
-          <div onClick={(e) => setIsOpen(!isOpen)} className='bg-MidNightBlack text-Green hidden lg:flex items-center h-16 justify-center text-2xl '>
+          <div onClick={(e) => setIsOpen(!isOpen)} className='bg-MidNightBlack text-Green hidden lg:flex items-center h-16 justify-center text-2xl cursor-pointer'>
             <span className='icon border-2 border-Green p-2 rounded-xl'>
               {' '}
               <FaBars />

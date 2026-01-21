@@ -2,6 +2,7 @@
 import { AiFillCopyrightCircle } from 'react-icons/ai'
 import { MdMail } from 'react-icons/md'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
+import { CONTACTS } from '../constants/constants'
 
 const Footer = () => {
     return (
@@ -20,9 +21,9 @@ const Footer = () => {
                     </div>
 
                     <div className="flex items-center gap-6">
-                        <a href="mailto:nishith.s.acharya@gmail.com" className="flex items-center gap-2 hover:text-RoyalBlue transition-colors group">
+                        <a href={`mailto:${CONTACTS.EMAIL}`} className="flex items-center gap-2 hover:text-RoyalBlue transition-colors group">
                             <MdMail className="text-lg group-hover:scale-110 transition-transform" />
-                            <span className="hidden md:block">iosamajavaid@gmail.com</span>
+                            <span className="hidden md:block">{CONTACTS.EMAIL}</span>
                         </a>
                         <a
                             href='https://www.fiverr.com/codeworthy'
