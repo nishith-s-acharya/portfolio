@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
 
                     <div className="flex items-center gap-6">
-                        <a href="mailto:iosamajavaid@gmail.com" className="flex items-center gap-2 hover:text-RoyalBlue transition-colors group">
+                        <a href="mailto:nishith.s.acharya@gmail.com" className="flex items-center gap-2 hover:text-RoyalBlue transition-colors group">
                             <MdMail className="text-lg group-hover:scale-110 transition-transform" />
                             <span className="hidden md:block">iosamajavaid@gmail.com</span>
                         </a>
