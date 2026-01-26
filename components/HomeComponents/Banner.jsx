@@ -2,6 +2,7 @@ import BannerLayout from '../Common/BannerLayout';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
+import { CONTACTS } from '../../constants/constants';
 
 const Banner = () => {
     return (
@@ -18,7 +19,7 @@ const Banner = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="mb-8 inline-block px-4 py-1.5 rounded-full border border-white/5 bg-zinc-900/50 text-sm md:text-base text-zinc-400 backdrop-blur-md shadow-sm"
+                        className="mb-8 inline-block px-4 py-1.5 rounded-full border border-white/5 bg-EveningBlack text-sm md:text-base text-LightGray backdrop-blur-md shadow-sm"
                     >
                         Building Scalable Digital Experiences
                     </motion.div>
@@ -61,7 +62,7 @@ const Banner = () => {
                             </motion.button>
                         </Link>
 
-                        <a href="mailto:nishith@example.com" className="px-8 py-4 rounded-lg border border-white/5 bg-zinc-900/50 hover:bg-zinc-800 transition-all text-OffWhite font-medium text-lg backdrop-blur-sm">
+                        <a href={`mailto:${CONTACTS.EMAIL}`} className="px-8 py-4 rounded-lg border border-white/5 bg-EveningBlack hover:bg-DeepNightBlack transition-all text-OffWhite font-medium text-lg backdrop-blur-sm">
                             Contact Me
                         </a>
                     </motion.div>

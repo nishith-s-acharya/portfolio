@@ -14,6 +14,8 @@ module.exports = {
         Surface: "var(--surface)",       // Card background
         SurfaceHighlight: "var(--surface-highlight)",
         MidNightBlack: "var(--background)",
+        DeepNightBlack: "var(--deep-night-black)",
+        EveningBlack: "var(--evening-black)",
         Snow: "var(--text-primary)",
       },
       fontFamily: {

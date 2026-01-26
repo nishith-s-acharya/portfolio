@@ -6,7 +6,7 @@ import { CONTACTS } from '../constants/constants'
 
 const Footer = () => {
     return (
-        <footer className="mt-20 z-10 relative bg-Surface/30 border-t border-white/5 backdrop-blur-sm">
+        <footer className="mt-20 z-10 relative bg-DeepNightBlack border-t border-white/5 backdrop-blur-sm">
             <div className="max-w-7xl mx-auto px-6 py-12">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-LightGray">
 
@@ -18,21 +18,6 @@ const Footer = () => {
                     <div className="flex items-center gap-2">
                         <span>Made with</span>
                         <span className="text-red-500 animate-pulse">❤️</span>
-                    </div>
-
-                    <div className="flex items-center gap-6">
-                        <a href={`mailto:${CONTACTS.EMAIL}`} className="flex items-center gap-2 hover:text-RoyalBlue transition-colors group">
-                            <MdMail className="text-lg group-hover:scale-110 transition-transform" />
-                            <span className="hidden md:block">{CONTACTS.EMAIL}</span>
-                        </a>
-                        <a
-                            href='https://www.fiverr.com/codeworthy'
-                            target="_blank"
-                            rel="noreferrer"
-                            className="hover:text-RoyalBlue transition-colors"
-                        >
-                            Fiverr
-                        </a>
                     </div>
                 </div>
             </div>

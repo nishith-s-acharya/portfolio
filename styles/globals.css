@@ -14,6 +14,8 @@
     --surface-highlight: #e4e4e7;
     --scrollbar-track: #f4f4f5;
     --scrollbar-thumb: #8b5cf6;
+    --deep-night-black: #ffffff;
+    --evening-black: #f4f4f5;
 }
 
 [data-theme='dark'] {
@@ -26,6 +28,8 @@
     --surface-highlight: #18181b;
     --scrollbar-track: #050505;
     --scrollbar-thumb: #8b5cf6;
+    --deep-night-black: #101012;
+    --evening-black: #18181b;
 }
 
 html {
@@ -49,9 +53,16 @@ button,
     /* Ensure interactive elements don't show default cursor */
 }
 
+/* Global Transition for Theme Switching */
+* {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
 @layer components {
     .bento-card {
-        @apply bg-zinc-900/40 border border-white/10 rounded-2xl p-6 transition-all duration-300 hover:border-white/20 hover:bg-zinc-900/60 cursor-grab active:cursor-grabbing backdrop-blur-md shadow-lg;
+        @apply bg-EveningBlack border border-white/10 rounded-2xl p-6 transition-all duration-300 hover:border-white/20 hover:bg-DeepNightBlack cursor-grab active:cursor-grabbing backdrop-blur-md shadow-lg;
     }
 
     .button-primary {

@@ -9,8 +9,8 @@ const Intro = () => {
   return (
     <div className='flex flex-col h-full bg-Surface border border-white/5 rounded-2xl overflow-hidden sticky top-4'>
       {/* Profile Header */}
-      <div className='flex flex-col items-center justify-center p-8 bg-zinc-900/30'>
-        <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-RoyalBlue/20 shadow-lg shadow-RoyalBlue/10 mb-4 transition-transform duration-300 hover:scale-105 p-2 bg-white/5">
+      <div className='flex flex-col items-center justify-center p-8 bg-DeepNightBlack'>
+        <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-RoyalBlue/20 shadow-lg shadow-RoyalBlue/10 mb-4 transition-transform duration-300 hover:scale-105 p-2 bg-EveningBlack">
           <img src="/images/profile.png" alt="Profile" className="w-full h-full object-cover rounded-full" />
         </div>
         <h2 className='text-2xl font-bold text-OffWhite mt-2 text-center'>{NAME}</h2>
@@ -21,15 +21,15 @@ const Intro = () => {
       <div className='flex-1 overflow-y-auto overflow-x-hidden no-scrollbar px-6 py-4 space-y-6'>
         {/* About / Details - Compact Grid */}
         <div className='grid grid-cols-2 gap-4'>
-          <div className='flex flex-col gap-1 p-3 rounded-xl bg-white/5 border border-white/5'>
+          <div className='flex flex-col gap-1 p-3 rounded-xl bg-EveningBlack border border-white/5'>
             <span className='text-xs text-LightGray uppercase tracking-wider font-semibold'>Location</span>
             <span className='text-sm text-OffWhite font-medium truncate'>{DETAILS.Residence}</span>
           </div>
-          <div className='flex flex-col gap-1 p-3 rounded-xl bg-white/5 border border-white/5'>
+          <div className='flex flex-col gap-1 p-3 rounded-xl bg-EveningBlack border border-white/5'>
             <span className='text-xs text-LightGray uppercase tracking-wider font-semibold'>City</span>
             <span className='text-sm text-OffWhite font-medium truncate'>{DETAILS.City}</span>
           </div>
-          <div className='flex flex-col gap-1 p-3 rounded-xl bg-white/5 border border-white/5 col-span-2'>
+          <div className='flex flex-col gap-1 p-3 rounded-xl bg-EveningBlack border border-white/5 col-span-2'>
             <div className="flex justify-between items-center">
               <span className='text-xs text-LightGray uppercase tracking-wider font-semibold'>Age</span>
               <span className='text-sm text-OffWhite font-medium'>{DETAILS.Age} Years Old</span>
@@ -42,7 +42,7 @@ const Intro = () => {
         <Tools />
 
         {/* Contact Compact */}
-        <div className='space-y-3 p-4 rounded-xl bg-zinc-900/40 border border-white/5'>
+        <div className='space-y-3 p-4 rounded-xl bg-DeepNightBlack border border-white/5'>
           <div className='flex items-center gap-3 text-sm group'>
             <div className="p-2 rounded-lg bg-RoyalBlue/10 text-RoyalBlue group-hover:bg-RoyalBlue group-hover:text-white transition-colors">
               <FaEnvelope />
